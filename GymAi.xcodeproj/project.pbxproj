@@ -1,0 +1,1202 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59CE2794996D00415E07 /* GymAiApp.swift */; };
+		427F59D12794996D00415E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
+		427F59D32794996E00415E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F59D22794996E00415E07 /* Assets.xcassets */; };
+		427F59D62794996E00415E07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F59D52794996E00415E07 /* Preview Assets.xcassets */; };
+		427F59E02794996F00415E07 /* GymAiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59DF2794996F00415E07 /* GymAiTests.swift */; };
+		427F59EA2794996F00415E07 /* GymAiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59E92794996F00415E07 /* GymAiUITests.swift */; };
+		427F59EC2794996F00415E07 /* GymAiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59EB2794996F00415E07 /* GymAiUITestsLaunchTests.swift */; };
+		427F59F02794996F00415E07 /* GymAi WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 427F59EF2794996F00415E07 /* GymAi WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		427F59F52794997000415E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F59F42794997000415E07 /* Assets.xcassets */; };
+		427F59FB2794997100415E07 /* GymAi WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 427F59FA2794997100415E07 /* GymAi WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		427F5A002794997100415E07 /* GymAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59FF2794997100415E07 /* GymAiApp.swift */; };
+		427F5A022794997100415E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A012794997100415E07 /* ContentView.swift */; };
+		427F5A042794997100415E07 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A032794997100415E07 /* NotificationController.swift */; };
+		427F5A062794997100415E07 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A052794997100415E07 /* NotificationView.swift */; };
+		427F5A082794997100415E07 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A072794997100415E07 /* ComplicationController.swift */; };
+		427F5A0A2794997200415E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F5A092794997200415E07 /* Assets.xcassets */; };
+		427F5A0D2794997200415E07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F5A0C2794997200415E07 /* Preview Assets.xcassets */; };
+		427F5A192794997200415E07 /* GymAi_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A182794997200415E07 /* GymAi_WatchKit_AppTests.swift */; };
+		427F5A232794997200415E07 /* GymAi_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A222794997200415E07 /* GymAi_WatchKit_AppUITests.swift */; };
+		427F5A252794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A242794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift */; };
+		427F5A4127949EBC00415E07 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 427F5A4027949EBC00415E07 /* SwiftSpeech */; };
+		427F5A492794C21C00415E07 /* ProcessString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A482794C21C00415E07 /* ProcessString.swift */; };
+		427F5A4A2794C21C00415E07 /* ProcessString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A482794C21C00415E07 /* ProcessString.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		427F59DC2794996F00415E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427F59C32794996C00415E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427F59CA2794996D00415E07;
+			remoteInfo = GymAi;
+		};
+		427F59E62794996F00415E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427F59C32794996C00415E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427F59CA2794996D00415E07;
+			remoteInfo = GymAi;
+		};
+		427F59F12794996F00415E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427F59C32794996C00415E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427F59EE2794996F00415E07;
+			remoteInfo = "GymAi WatchKit App";
+		};
+		427F59FC2794997100415E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427F59C32794996C00415E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427F59F92794997100415E07;
+			remoteInfo = "GymAi WatchKit Extension";
+		};
+		427F5A152794997200415E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427F59C32794996C00415E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427F59F92794997100415E07;
+			remoteInfo = "GymAi WatchKit Extension";
+		};
+		427F5A1F2794997200415E07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427F59C32794996C00415E07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427F59EE2794996F00415E07;
+			remoteInfo = "GymAi WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		427F5A2B2794997200415E07 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				427F59FB2794997100415E07 /* GymAi WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F5A2F2794997200415E07 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				427F59F02794996F00415E07 /* GymAi WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		427F59CB2794996D00415E07 /* GymAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		427F59CE2794996D00415E07 /* GymAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiApp.swift; sourceTree = "<group>"; };
+		427F59D02794996D00415E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		427F59D22794996E00415E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		427F59D52794996E00415E07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		427F59DB2794996F00415E07 /* GymAiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		427F59DF2794996F00415E07 /* GymAiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiTests.swift; sourceTree = "<group>"; };
+		427F59E52794996F00415E07 /* GymAiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymAiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		427F59E92794996F00415E07 /* GymAiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiUITests.swift; sourceTree = "<group>"; };
+		427F59EB2794996F00415E07 /* GymAiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		427F59EF2794996F00415E07 /* GymAi WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GymAi WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		427F59F42794997000415E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		427F59FA2794997100415E07 /* GymAi WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GymAi WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		427F59FF2794997100415E07 /* GymAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiApp.swift; sourceTree = "<group>"; };
+		427F5A012794997100415E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		427F5A032794997100415E07 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		427F5A052794997100415E07 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		427F5A072794997100415E07 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		427F5A092794997200415E07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		427F5A0C2794997200415E07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		427F5A0E2794997200415E07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		427F5A0F2794997200415E07 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		427F5A142794997200415E07 /* GymAi WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GymAi WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		427F5A182794997200415E07 /* GymAi_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		427F5A1E2794997200415E07 /* GymAi WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GymAi WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		427F5A222794997200415E07 /* GymAi_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		427F5A242794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		427F5A482794C21C00415E07 /* ProcessString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessString.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427F59C82794996D00415E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F5A4127949EBC00415E07 /* SwiftSpeech in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59D82794996F00415E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59E22794996F00415E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59F72794997100415E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F5A112794997200415E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F5A1B2794997200415E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		427F59C22794996C00415E07 = {
+			isa = PBXGroup;
+			children = (
+				427F59CD2794996D00415E07 /* GymAi */,
+				427F59DE2794996F00415E07 /* GymAiTests */,
+				427F59E82794996F00415E07 /* GymAiUITests */,
+				427F59F32794996F00415E07 /* GymAi WatchKit App */,
+				427F59FE2794997100415E07 /* GymAi WatchKit Extension */,
+				427F5A172794997200415E07 /* GymAi WatchKit AppTests */,
+				427F5A212794997200415E07 /* GymAi WatchKit AppUITests */,
+				427F59CC2794996D00415E07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		427F59CC2794996D00415E07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				427F59CB2794996D00415E07 /* GymAi.app */,
+				427F59DB2794996F00415E07 /* GymAiTests.xctest */,
+				427F59E52794996F00415E07 /* GymAiUITests.xctest */,
+				427F59EF2794996F00415E07 /* GymAi WatchKit App.app */,
+				427F59FA2794997100415E07 /* GymAi WatchKit Extension.appex */,
+				427F5A142794997200415E07 /* GymAi WatchKit AppTests.xctest */,
+				427F5A1E2794997200415E07 /* GymAi WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		427F59CD2794996D00415E07 /* GymAi */ = {
+			isa = PBXGroup;
+			children = (
+				427F59CE2794996D00415E07 /* GymAiApp.swift */,
+				427F59D02794996D00415E07 /* ContentView.swift */,
+				427F5A482794C21C00415E07 /* ProcessString.swift */,
+				427F59D22794996E00415E07 /* Assets.xcassets */,
+				427F59D42794996E00415E07 /* Preview Content */,
+			);
+			path = GymAi;
+			sourceTree = "<group>";
+		};
+		427F59D42794996E00415E07 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				427F59D52794996E00415E07 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		427F59DE2794996F00415E07 /* GymAiTests */ = {
+			isa = PBXGroup;
+			children = (
+				427F59DF2794996F00415E07 /* GymAiTests.swift */,
+			);
+			path = GymAiTests;
+			sourceTree = "<group>";
+		};
+		427F59E82794996F00415E07 /* GymAiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				427F59E92794996F00415E07 /* GymAiUITests.swift */,
+				427F59EB2794996F00415E07 /* GymAiUITestsLaunchTests.swift */,
+			);
+			path = GymAiUITests;
+			sourceTree = "<group>";
+		};
+		427F59F32794996F00415E07 /* GymAi WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				427F59F42794997000415E07 /* Assets.xcassets */,
+			);
+			path = "GymAi WatchKit App";
+			sourceTree = "<group>";
+		};
+		427F59FE2794997100415E07 /* GymAi WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				427F59FF2794997100415E07 /* GymAiApp.swift */,
+				427F5A012794997100415E07 /* ContentView.swift */,
+				427F5A032794997100415E07 /* NotificationController.swift */,
+				427F5A052794997100415E07 /* NotificationView.swift */,
+				427F5A072794997100415E07 /* ComplicationController.swift */,
+				427F5A092794997200415E07 /* Assets.xcassets */,
+				427F5A0E2794997200415E07 /* Info.plist */,
+				427F5A0F2794997200415E07 /* PushNotificationPayload.apns */,
+				427F5A0B2794997200415E07 /* Preview Content */,
+			);
+			path = "GymAi WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		427F5A0B2794997200415E07 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				427F5A0C2794997200415E07 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		427F5A172794997200415E07 /* GymAi WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				427F5A182794997200415E07 /* GymAi_WatchKit_AppTests.swift */,
+			);
+			path = "GymAi WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		427F5A212794997200415E07 /* GymAi WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				427F5A222794997200415E07 /* GymAi_WatchKit_AppUITests.swift */,
+				427F5A242794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "GymAi WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		427F59CA2794996D00415E07 /* GymAi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F5A302794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi" */;
+			buildPhases = (
+				427F59C72794996D00415E07 /* Sources */,
+				427F59C82794996D00415E07 /* Frameworks */,
+				427F59C92794996D00415E07 /* Resources */,
+				427F5A2F2794997200415E07 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427F59F22794996F00415E07 /* PBXTargetDependency */,
+			);
+			name = GymAi;
+			packageProductDependencies = (
+				427F5A4027949EBC00415E07 /* SwiftSpeech */,
+			);
+			productName = GymAi;
+			productReference = 427F59CB2794996D00415E07 /* GymAi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		427F59DA2794996F00415E07 /* GymAiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F5A332794997200415E07 /* Build configuration list for PBXNativeTarget "GymAiTests" */;
+			buildPhases = (
+				427F59D72794996F00415E07 /* Sources */,
+				427F59D82794996F00415E07 /* Frameworks */,
+				427F59D92794996F00415E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427F59DD2794996F00415E07 /* PBXTargetDependency */,
+			);
+			name = GymAiTests;
+			productName = GymAiTests;
+			productReference = 427F59DB2794996F00415E07 /* GymAiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		427F59E42794996F00415E07 /* GymAiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F5A362794997200415E07 /* Build configuration list for PBXNativeTarget "GymAiUITests" */;
+			buildPhases = (
+				427F59E12794996F00415E07 /* Sources */,
+				427F59E22794996F00415E07 /* Frameworks */,
+				427F59E32794996F00415E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427F59E72794996F00415E07 /* PBXTargetDependency */,
+			);
+			name = GymAiUITests;
+			productName = GymAiUITests;
+			productReference = 427F59E52794996F00415E07 /* GymAiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		427F59EE2794996F00415E07 /* GymAi WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F5A2C2794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi WatchKit App" */;
+			buildPhases = (
+				427F59ED2794996F00415E07 /* Resources */,
+				427F5A2B2794997200415E07 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427F59FD2794997100415E07 /* PBXTargetDependency */,
+			);
+			name = "GymAi WatchKit App";
+			productName = "GymAi WatchKit App";
+			productReference = 427F59EF2794996F00415E07 /* GymAi WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		427F59F92794997100415E07 /* GymAi WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F5A282794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi WatchKit Extension" */;
+			buildPhases = (
+				427F59F62794997100415E07 /* Sources */,
+				427F59F72794997100415E07 /* Frameworks */,
+				427F59F82794997100415E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GymAi WatchKit Extension";
+			productName = "GymAi WatchKit Extension";
+			productReference = 427F59FA2794997100415E07 /* GymAi WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		427F5A132794997200415E07 /* GymAi WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F5A392794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi WatchKit AppTests" */;
+			buildPhases = (
+				427F5A102794997200415E07 /* Sources */,
+				427F5A112794997200415E07 /* Frameworks */,
+				427F5A122794997200415E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427F5A162794997200415E07 /* PBXTargetDependency */,
+			);
+			name = "GymAi WatchKit AppTests";
+			productName = "GymAi WatchKit AppTests";
+			productReference = 427F5A142794997200415E07 /* GymAi WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		427F5A1D2794997200415E07 /* GymAi WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427F5A3C2794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi WatchKit AppUITests" */;
+			buildPhases = (
+				427F5A1A2794997200415E07 /* Sources */,
+				427F5A1B2794997200415E07 /* Frameworks */,
+				427F5A1C2794997200415E07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427F5A202794997200415E07 /* PBXTargetDependency */,
+			);
+			name = "GymAi WatchKit AppUITests";
+			productName = "GymAi WatchKit AppUITests";
+			productReference = 427F5A1E2794997200415E07 /* GymAi WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		427F59C32794996C00415E07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					427F59CA2794996D00415E07 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					427F59DA2794996F00415E07 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 427F59CA2794996D00415E07;
+					};
+					427F59E42794996F00415E07 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 427F59CA2794996D00415E07;
+					};
+					427F59EE2794996F00415E07 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					427F59F92794997100415E07 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					427F5A132794997200415E07 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 427F59F92794997100415E07;
+					};
+					427F5A1D2794997200415E07 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 427F59EE2794996F00415E07;
+					};
+				};
+			};
+			buildConfigurationList = 427F59C62794996C00415E07 /* Build configuration list for PBXProject "GymAi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 427F59C22794996C00415E07;
+			packageReferences = (
+				427F5A3F27949EBC00415E07 /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
+			);
+			productRefGroup = 427F59CC2794996D00415E07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				427F59CA2794996D00415E07 /* GymAi */,
+				427F59DA2794996F00415E07 /* GymAiTests */,
+				427F59E42794996F00415E07 /* GymAiUITests */,
+				427F59EE2794996F00415E07 /* GymAi WatchKit App */,
+				427F59F92794997100415E07 /* GymAi WatchKit Extension */,
+				427F5A132794997200415E07 /* GymAi WatchKit AppTests */,
+				427F5A1D2794997200415E07 /* GymAi WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		427F59C92794996D00415E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F59D62794996E00415E07 /* Preview Assets.xcassets in Resources */,
+				427F59D32794996E00415E07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59D92794996F00415E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59E32794996F00415E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59ED2794996F00415E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F59F52794997000415E07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59F82794997100415E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F5A0D2794997200415E07 /* Preview Assets.xcassets in Resources */,
+				427F5A0A2794997200415E07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F5A122794997200415E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F5A1C2794997200415E07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		427F59C72794996D00415E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F59D12794996D00415E07 /* ContentView.swift in Sources */,
+				427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */,
+				427F5A492794C21C00415E07 /* ProcessString.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59D72794996F00415E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F59E02794996F00415E07 /* GymAiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59E12794996F00415E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F59EC2794996F00415E07 /* GymAiUITestsLaunchTests.swift in Sources */,
+				427F59EA2794996F00415E07 /* GymAiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F59F62794997100415E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F5A042794997100415E07 /* NotificationController.swift in Sources */,
+				427F5A022794997100415E07 /* ContentView.swift in Sources */,
+				427F5A4A2794C21C00415E07 /* ProcessString.swift in Sources */,
+				427F5A082794997100415E07 /* ComplicationController.swift in Sources */,
+				427F5A002794997100415E07 /* GymAiApp.swift in Sources */,
+				427F5A062794997100415E07 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F5A102794997200415E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F5A192794997200415E07 /* GymAi_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427F5A1A2794997200415E07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427F5A232794997200415E07 /* GymAi_WatchKit_AppUITests.swift in Sources */,
+				427F5A252794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		427F59DD2794996F00415E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427F59CA2794996D00415E07 /* GymAi */;
+			targetProxy = 427F59DC2794996F00415E07 /* PBXContainerItemProxy */;
+		};
+		427F59E72794996F00415E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427F59CA2794996D00415E07 /* GymAi */;
+			targetProxy = 427F59E62794996F00415E07 /* PBXContainerItemProxy */;
+		};
+		427F59F22794996F00415E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427F59EE2794996F00415E07 /* GymAi WatchKit App */;
+			targetProxy = 427F59F12794996F00415E07 /* PBXContainerItemProxy */;
+		};
+		427F59FD2794997100415E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427F59F92794997100415E07 /* GymAi WatchKit Extension */;
+			targetProxy = 427F59FC2794997100415E07 /* PBXContainerItemProxy */;
+		};
+		427F5A162794997200415E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427F59F92794997100415E07 /* GymAi WatchKit Extension */;
+			targetProxy = 427F5A152794997200415E07 /* PBXContainerItemProxy */;
+		};
+		427F5A202794997200415E07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427F59EE2794996F00415E07 /* GymAi WatchKit App */;
+			targetProxy = 427F5A1F2794997200415E07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		427F5A262794997200415E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		427F5A272794997200415E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		427F5A292794997200415E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymAi WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GymAi WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GymAi WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAi.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		427F5A2A2794997200415E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymAi WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "GymAi WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "GymAi WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAi.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		427F5A2D2794997200415E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = GymAi_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "GymAi WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Ani.GymAi;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		427F5A2E2794997200415E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = GymAi_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "GymAi WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Ani.GymAi;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		427F5A312794997200415E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymAi/Preview Content\"";
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to turn your speech to text";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		427F5A322794997200415E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GymAi/Preview Content\"";
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to turn your speech to text";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		427F5A342794997200415E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymAi.app/GymAi";
+			};
+			name = Debug;
+		};
+		427F5A352794997200415E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymAi.app/GymAi";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		427F5A372794997200415E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GymAi;
+			};
+			name = Debug;
+		};
+		427F5A382794997200415E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Ani.GymAiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GymAi;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		427F5A3A2794997200415E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ani.GymAi-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymAi WatchKit Extension.appex/GymAi WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		427F5A3B2794997200415E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ani.GymAi-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GymAi WatchKit Extension.appex/GymAi WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		427F5A3D2794997200415E07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ani.GymAi-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "GymAi WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		427F5A3E2794997200415E07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9VFVF3XG9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ani.GymAi-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "GymAi WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		427F59C62794996C00415E07 /* Build configuration list for PBXProject "GymAi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F5A262794997200415E07 /* Debug */,
+				427F5A272794997200415E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F5A282794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F5A292794997200415E07 /* Debug */,
+				427F5A2A2794997200415E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F5A2C2794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F5A2D2794997200415E07 /* Debug */,
+				427F5A2E2794997200415E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F5A302794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F5A312794997200415E07 /* Debug */,
+				427F5A322794997200415E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F5A332794997200415E07 /* Build configuration list for PBXNativeTarget "GymAiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F5A342794997200415E07 /* Debug */,
+				427F5A352794997200415E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F5A362794997200415E07 /* Build configuration list for PBXNativeTarget "GymAiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F5A372794997200415E07 /* Debug */,
+				427F5A382794997200415E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F5A392794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F5A3A2794997200415E07 /* Debug */,
+				427F5A3B2794997200415E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427F5A3C2794997200415E07 /* Build configuration list for PBXNativeTarget "GymAi WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427F5A3D2794997200415E07 /* Debug */,
+				427F5A3E2794997200415E07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		427F5A3F27949EBC00415E07 /* XCRemoteSwiftPackageReference "SwiftSpeech" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Cay-Zhang/SwiftSpeech";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		427F5A4027949EBC00415E07 /* SwiftSpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 427F5A3F27949EBC00415E07 /* XCRemoteSwiftPackageReference "SwiftSpeech" */;
+			productName = SwiftSpeech;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 427F59C32794996C00415E07 /* Project object */;
+}
