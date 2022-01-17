@@ -30,6 +30,31 @@
 		427F5A4127949EBC00415E07 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 427F5A4027949EBC00415E07 /* SwiftSpeech */; };
 		427F5A492794C21C00415E07 /* ProcessString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A482794C21C00415E07 /* ProcessString.swift */; };
 		427F5A4A2794C21C00415E07 /* ProcessString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A482794C21C00415E07 /* ProcessString.swift */; };
+		B16EC8F82794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
+		B16EC8F92794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
+		B16EC8FA2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
+		B16EC8FB2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
+		B16EC8FD2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
+		B16EC8FE2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
+		B16EC9012794E18800F35D53 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9002794E18800F35D53 /* FirebaseAnalytics */; };
+		B16EC9032794E18800F35D53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9022794E18800F35D53 /* FirebaseAuth */; };
+		B16EC9052794E18800F35D53 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9042794E18800F35D53 /* FirebaseFirestore */; };
+		B16EC9072794E18800F35D53 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9062794E18800F35D53 /* FirebaseFirestoreCombine-Community */; };
+		B16EC9092794E18800F35D53 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9082794E18800F35D53 /* FirebaseFirestoreSwift-Beta */; };
+		B16EC90E2794F80000F35D53 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC90D2794F80000F35D53 /* GoogleSignIn */; };
+		B16EC9172794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
+		B16EC91A2794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
+		B16EC91D2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */; };
+		B16EC91E2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */; };
+		B16EC91F2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */; };
+		B16EC9242794FBF200F35D53 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC9232794FBF200F35D53 /* LoginView.swift */; };
+		B16EC9252794FBF200F35D53 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC9232794FBF200F35D53 /* LoginView.swift */; };
+		B16EC9262794FBF200F35D53 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC9232794FBF200F35D53 /* LoginView.swift */; };
+		B16EC92B2794FC8500F35D53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC92A2794FC8500F35D53 /* HomeView.swift */; };
+		B16EC92C2794FC8500F35D53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC92A2794FC8500F35D53 /* HomeView.swift */; };
+		B16EC92D2794FC8500F35D53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC92A2794FC8500F35D53 /* HomeView.swift */; };
+		B173BA8227950E6700179336 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BA8127950E6700179336 /* SessionStore.swift */; };
+		B173BA842795126000179336 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BA832795126000179336 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +156,14 @@
 		427F5A222794997200415E07 /* GymAi_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		427F5A242794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		427F5A482794C21C00415E07 /* ProcessString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessString.swift; sourceTree = "<group>"; };
+		B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B16EC90A2794EA9800F35D53 /* GymAi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymAi.entitlements; sourceTree = "<group>"; };
+		B16EC90B2794EC6900F35D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
+		B16EC9232794FBF200F35D53 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B16EC92A2794FC8500F35D53 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B173BA8127950E6700179336 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		B173BA832795126000179336 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +171,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EC9012794E18800F35D53 /* FirebaseAnalytics in Frameworks */,
+				B16EC9052794E18800F35D53 /* FirebaseFirestore in Frameworks */,
+				B16EC9032794E18800F35D53 /* FirebaseAuth in Frameworks */,
+				B16EC9092794E18800F35D53 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				B16EC9072794E18800F35D53 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				427F5A4127949EBC00415E07 /* SwiftSpeech in Frameworks */,
+				B16EC90E2794F80000F35D53 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +222,7 @@
 		427F59C22794996C00415E07 = {
 			isa = PBXGroup;
 			children = (
+				B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */,
 				427F59CD2794996D00415E07 /* GymAi */,
 				427F59DE2794996F00415E07 /* GymAiTests */,
 				427F59E82794996F00415E07 /* GymAiUITests */,
@@ -211,9 +251,10 @@
 		427F59CD2794996D00415E07 /* GymAi */ = {
 			isa = PBXGroup;
 			children = (
+				B16EC9162794FB0B00F35D53 /* Views */,
+				B16EC90B2794EC6900F35D53 /* Info.plist */,
+				B16EC90A2794EA9800F35D53 /* GymAi.entitlements */,
 				427F59CE2794996D00415E07 /* GymAiApp.swift */,
-				427F59D02794996D00415E07 /* ContentView.swift */,
-				427F5A482794C21C00415E07 /* ProcessString.swift */,
 				427F59D22794996E00415E07 /* Assets.xcassets */,
 				427F59D42794996E00415E07 /* Preview Content */,
 			);
@@ -294,6 +335,20 @@
 			path = "GymAi WatchKit AppUITests";
 			sourceTree = "<group>";
 		};
+		B16EC9162794FB0B00F35D53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				427F5A482794C21C00415E07 /* ProcessString.swift */,
+				427F59D02794996D00415E07 /* ContentView.swift */,
+				B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */,
+				B16EC9232794FBF200F35D53 /* LoginView.swift */,
+				B16EC92A2794FC8500F35D53 /* HomeView.swift */,
+				B173BA8127950E6700179336 /* SessionStore.swift */,
+				B173BA832795126000179336 /* User.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -314,6 +369,12 @@
 			name = GymAi;
 			packageProductDependencies = (
 				427F5A4027949EBC00415E07 /* SwiftSpeech */,
+				B16EC9002794E18800F35D53 /* FirebaseAnalytics */,
+				B16EC9022794E18800F35D53 /* FirebaseAuth */,
+				B16EC9042794E18800F35D53 /* FirebaseFirestore */,
+				B16EC9062794E18800F35D53 /* FirebaseFirestoreCombine-Community */,
+				B16EC9082794E18800F35D53 /* FirebaseFirestoreSwift-Beta */,
+				B16EC90D2794F80000F35D53 /* GoogleSignIn */,
 			);
 			productName = GymAi;
 			productReference = 427F59CB2794996D00415E07 /* GymAi.app */;
@@ -473,6 +534,8 @@
 			mainGroup = 427F59C22794996C00415E07;
 			packageReferences = (
 				427F5A3F27949EBC00415E07 /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
+				B16EC8FF2794E18800F35D53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B16EC90C2794F80000F35D53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = 427F59CC2794996D00415E07 /* Products */;
 			projectDirPath = "";
@@ -496,6 +559,7 @@
 			files = (
 				427F59D62794996E00415E07 /* Preview Assets.xcassets in Resources */,
 				427F59D32794996E00415E07 /* Assets.xcassets in Resources */,
+				B16EC8F82794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +567,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EC8F92794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +575,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EC8FA2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +584,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				427F59F52794997000415E07 /* Assets.xcassets in Resources */,
+				B16EC8FB2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +601,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EC8FD2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +609,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EC8FE2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,8 +620,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EC9242794FBF200F35D53 /* LoginView.swift in Sources */,
+				B16EC92B2794FC8500F35D53 /* HomeView.swift in Sources */,
 				427F59D12794996D00415E07 /* ContentView.swift in Sources */,
+				B16EC91D2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */,
+				B173BA842795126000179336 /* User.swift in Sources */,
 				427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */,
+				B173BA8227950E6700179336 /* SessionStore.swift in Sources */,
 				427F5A492794C21C00415E07 /* ProcessString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,7 +635,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EC91E2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */,
 				427F59E02794996F00415E07 /* GymAiTests.swift in Sources */,
+				B16EC92C2794FC8500F35D53 /* HomeView.swift in Sources */,
+				B16EC9252794FBF200F35D53 /* LoginView.swift in Sources */,
+				B16EC91A2794FB2900F35D53 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,7 +647,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B16EC9262794FBF200F35D53 /* LoginView.swift in Sources */,
+				B16EC92D2794FC8500F35D53 /* HomeView.swift in Sources */,
 				427F59EC2794996F00415E07 /* GymAiUITestsLaunchTests.swift in Sources */,
+				B16EC91F2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */,
+				B16EC9172794FB2900F35D53 /* ContentView.swift in Sources */,
 				427F59EA2794996F00415E07 /* GymAiUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -874,12 +956,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GymAi/GymAi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GymAi/Preview Content\"";
 				DEVELOPMENT_TEAM = N9VFVF3XG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GymAi/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to turn your speech to text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -907,12 +991,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GymAi/GymAi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GymAi/Preview Content\"";
 				DEVELOPMENT_TEAM = N9VFVF3XG9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GymAi/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to turn your speech to text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1188,6 +1274,22 @@
 				kind = branch;
 			};
 		};
+		B16EC8FF2794E18800F35D53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		B16EC90C2794F80000F35D53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1195,6 +1297,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 427F5A3F27949EBC00415E07 /* XCRemoteSwiftPackageReference "SwiftSpeech" */;
 			productName = SwiftSpeech;
+		};
+		B16EC9002794E18800F35D53 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B16EC8FF2794E18800F35D53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B16EC9022794E18800F35D53 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B16EC8FF2794E18800F35D53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B16EC9042794E18800F35D53 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B16EC8FF2794E18800F35D53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B16EC9062794E18800F35D53 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B16EC8FF2794E18800F35D53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		B16EC9082794E18800F35D53 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B16EC8FF2794E18800F35D53 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		B16EC90D2794F80000F35D53 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B16EC90C2794F80000F35D53 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
