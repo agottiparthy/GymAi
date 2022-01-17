@@ -1,25 +1,48 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  GymAi
 //
-//  Created by Ani Gottiparthy on 1/16/22.
+//  Created by Andrew Luo on 1/16/22.
 //
 
+import Combine
+import GoogleSignIn
 import SwiftUI
 import SwiftSpeech
-import Combine
 
-struct ContentView: View {
+struct HomeView: View {
+
+  @EnvironmentObject private var session: SessionStore
     
-    
-    var body: some View {
-       
-        VStack {
-            Basic.init()
-            
+  var body: some View {
+     
+    VStack {
+      HStack {
+        
+        VStack(alignment: .leading) {
+          Text("Welcome ")
+                        .font(.headline)
+          + Text(session.session?.displayName ?? "")
+                        .font(.headline)
         }
         
+      }
+      Spacer()
+
+      Basic.init()
+    
+      Button(action: session.signOut) {
+              Text("Sign out")
+                .foregroundColor(.white)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color(.systemIndigo))
+                .cornerRadius(12)
+                .padding()
+      }
     }
+      
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
