@@ -9,12 +9,31 @@ import Foundation
 import SwiftUI
 
 struct ProcessString {
+    
     var rawString: String
+    var parseTime: String
+    var parseExercise: String
+    var parseSets: String
+    var parseReps: String
+    var parseWeight: String
     
+   
     
-    func printString() {
+    init(rawString: String){
+        self.rawString = rawString
+        self.parseTime = ""
+        self.parseExercise = ""
+        self.parseSets = ""
+        self.parseReps = ""
+        self.parseWeight = ""
         
-        var cleanedString = cleanString(text: self.rawString)
+        let cleanedString = cleanString(text: self.rawString)
+        var splitString = cleanedString.components(separatedBy: " ")
+        
+        parseString(textArr: splitString)
+        
+        
+        print(splitString)
         
     }
     
@@ -26,20 +45,116 @@ struct ProcessString {
             if charArray[i] == "." {
                 newArray.remove(at: i)
             }
+            
+            
             i += 1
         }
         
-        return String(newArray)
+        return String(newArray).capitalized
     }
     
-    func parseString(text: String) -> (repBegin: Int, repEnd: Int) {
-//        let detectedReps = textArr.firstIndex(of: "Reps")
-//        let detectedWraps = textArr.firstIndex(of: "Wraps")
-//        let detectedRepetitions = textArr.firstIndex(of: "Repetitions")
-//        let detectedRepetition = textArr.firstIndex(of: "Repetition")
+    mutating func parseString(textArr: [String]) -> () {
+        var strippedString = textArr
+        var releventIndices:[Int] = []
+        
+        let repIndex = containedReps(textArr: textArr)
+        if repIndex != -1 {
+            parseReps = textArr[repIndex] + " " + textArr[repIndex + 1]
+            releventIndices.append(repIndex)
+            releventIndices.append(repIndex + 1)
 
-        return (0, 0)
+        }
+        
+        let timeIndex = containedTime(textArr: textArr)
+        if timeIndex != -1 {
+            parseTime = textArr[timeIndex] + " " + textArr[timeIndex + 1]
+            releventIndices.append(timeIndex)
+            releventIndices.append(timeIndex + 1)
+        }
+        
+        let setIndex = containedSets(textArr: textArr)
+        if setIndex != -1 {
+            parseSets = textArr[setIndex] + " " + textArr[setIndex + 1]
+            releventIndices.append(setIndex)
+            releventIndices.append(setIndex + 1)
+        } else {
+            parseSets = "1 Set"
+        }
+        
+        
+        let weightIndex = containedWeight(textArr: textArr)
+        if weightIndex != -1 {
+            parseWeight = textArr[weightIndex] + " " + textArr[weightIndex + 1]
+            releventIndices.append(weightIndex)
+            releventIndices.append(weightIndex + 1)
+        }
+        
+        //remove all used words maintaining array order. Stripping is only way I can think off to find the exercise name
+        let sorted = releventIndices.sorted()
+        let reversed: [Int] = Array(sorted.reversed())
+        
+        for i in reversed {
+            strippedString.remove(at: i)
+        }
+        
+        let prepositions: Set<String> = ["I", "For", "And", "To", "Me", "Did", "Lifted", "To", "With", "Of"]
+        strippedString.removeAll(where: {prepositions.contains($0)})
+        parseExercise = strippedString.joined(separator: " ")
+        
+        print(parseExercise)
+        
+        return
     }
+    
+    //parseString helpers. CAPITALIZE KEY WORDS, matching is case sensititve.
+    func containedReps(textArr:[String]) -> Int {
+        let keywords = ["Reps", "Wraps", "Repetitions", "Times", "Repetition"]
+        
+        for keyword in keywords {
+            let index = textArr.firstIndex(of: keyword)
+            if index != nil {
+                return index! - 1
+            }
+        }
+        return -1
+    }
+    
+    func containedTime(textArr:[String]) -> Int {
+        let keywords = ["Seconds", "Minutes", "Hours", "Sex", "Mins", "Sex"]
+        
+        for keyword in keywords {
+            let index = textArr.firstIndex(of: keyword)
+            if index != nil {
+                return index! - 1
+            }
+        }
+        return -1
+    }
+    
+    func containedSets(textArr:[String]) -> Int {
+        let keywords = ["Sets", "Set"]
+        
+        for keyword in keywords {
+            let index = textArr.firstIndex(of: keyword)
+            if index != nil {
+                return index! - 1
+            }
+        }
+        return -1
+    }
+    
+    func containedWeight(textArr:[String]) -> Int {
+        let keywords = ["Pounds", "Kg\'s", "Kilograms", "Lb\'s", "Plates"]
+        
+        for keyword in keywords {
+            let index = textArr.firstIndex(of: keyword)
+            if index != nil {
+                return index! - 1
+            }
+        }
+        return -1
+    }
+    
     
 }
 

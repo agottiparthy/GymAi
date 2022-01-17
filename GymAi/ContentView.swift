@@ -32,6 +32,7 @@ struct ContentView_Previews: PreviewProvider {
 struct Basic : View {
     
     var sessionConfiguration: SwiftSpeech.Session.Configuration
+    let contextStrings: [String] = ["squat", "squatted", "reps", "bench press", "squats"]
     
     @State private var text = "Tap to Speak"
 
@@ -56,7 +57,7 @@ struct Basic : View {
                 .swiftSpeechToggleRecordingOnTap(sessionConfiguration: sessionConfiguration, animation: .spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0))
                 .onRecognizeLatest(update: $text)
             Button("Save") {
-                ProcessString(rawString: text).printString()
+                ProcessString(rawString: text)
             }
         }.onAppear {
             SwiftSpeech.requestSpeechRecognitionAuthorization()
