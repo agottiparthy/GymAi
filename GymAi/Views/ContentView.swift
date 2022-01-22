@@ -23,6 +23,7 @@ struct ContentView: View {
         HomeView()
       } else {
         LoginView()
+        
       }
     }.onAppear(perform: getUser)
   }
