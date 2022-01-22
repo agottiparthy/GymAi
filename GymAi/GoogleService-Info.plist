@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>662910286151-sc7tc297tumpqh7gvgr2idhvgjjkph09.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.662910286151-sc7tc297tumpqh7gvgr2idhvgjjkph09</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCFzYykk1BbqbjUKg5hPaSltYs5gZ6druI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>662910286151</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Ani.GymAi</string>
+	<key>PROJECT_ID</key>
+	<string>gymai-3e8ec</string>
+	<key>STORAGE_BUCKET</key>
+	<string>gymai-3e8ec.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:662910286151:ios:d848182d0bb4c08b62b462</string>
+	<key>DATABASE_URL</key>
+	<string>https://gymai-3e8ec-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
