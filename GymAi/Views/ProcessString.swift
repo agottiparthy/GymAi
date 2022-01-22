@@ -5,6 +5,7 @@
 //  Created by Ani Gottiparthy on 1/16/22.
 //
 
+import Firebase
 import Foundation
 import SwiftUI
 
@@ -16,8 +17,6 @@ struct ProcessString {
     var parseSets: String
     var parseReps: String
     var parseWeight: String
-    
-   
     
     init(rawString: String){
         self.rawString = rawString
