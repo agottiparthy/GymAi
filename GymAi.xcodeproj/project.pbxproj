@@ -29,12 +29,7 @@
 		427F5A252794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A242794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift */; };
 		427F5A4127949EBC00415E07 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 427F5A4027949EBC00415E07 /* SwiftSpeech */; };
 		427F5A492794C21C00415E07 /* ProcessString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A482794C21C00415E07 /* ProcessString.swift */; };
-		B16EC8F82794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
-		B16EC8F92794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
-		B16EC8FA2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
-		B16EC8FB2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
-		B16EC8FD2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
-		B16EC8FE2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */; };
+		42B90F32279C9DD600DE9D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */; };
 		B16EC90E2794F80000F35D53 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC90D2794F80000F35D53 /* GoogleSignIn */; };
 		B16EC9172794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
 		B16EC91A2794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
@@ -158,7 +153,7 @@
 		427F5A222794997200415E07 /* GymAi_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		427F5A242794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		427F5A482794C21C00415E07 /* ProcessString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessString.swift; sourceTree = "<group>"; };
-		B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B16EC90A2794EA9800F35D53 /* GymAi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymAi.entitlements; sourceTree = "<group>"; };
 		B16EC90B2794EC6900F35D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
@@ -227,7 +222,6 @@
 		427F59C22794996C00415E07 = {
 			isa = PBXGroup;
 			children = (
-				B16EC8F72794DE2E00F35D53 /* GoogleService-Info.plist */,
 				427F59CD2794996D00415E07 /* GymAi */,
 				427F59DE2794996F00415E07 /* GymAiTests */,
 				427F59E82794996F00415E07 /* GymAiUITests */,
@@ -256,6 +250,7 @@
 		427F59CD2794996D00415E07 /* GymAi */ = {
 			isa = PBXGroup;
 			children = (
+				42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */,
 				B16EC9162794FB0B00F35D53 /* Views */,
 				B16EC90B2794EC6900F35D53 /* Info.plist */,
 				B16EC90A2794EA9800F35D53 /* GymAi.entitlements */,
@@ -567,7 +562,7 @@
 			files = (
 				427F59D62794996E00415E07 /* Preview Assets.xcassets in Resources */,
 				427F59D32794996E00415E07 /* Assets.xcassets in Resources */,
-				B16EC8F82794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
+				42B90F32279C9DD600DE9D73 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +570,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16EC8F92794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +577,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16EC8FA2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,7 +585,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				427F59F52794997000415E07 /* Assets.xcassets in Resources */,
-				B16EC8FB2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,7 +601,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16EC8FD2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,7 +608,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B16EC8FE2794DE2F00F35D53 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
