@@ -42,7 +42,7 @@
 		B16EC9032794E18800F35D53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9022794E18800F35D53 /* FirebaseAuth */; };
 		B16EC9052794E18800F35D53 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9042794E18800F35D53 /* FirebaseFirestore */; };
 		B16EC9072794E18800F35D53 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9062794E18800F35D53 /* FirebaseFirestoreCombine-Community */; };
-		B16EC9092794E18800F35D53 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9082794E18800F35D53 /* FirebaseFirestoreSwift-Beta */; }
+		B16EC9092794E18800F35D53 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9082794E18800F35D53 /* FirebaseFirestoreSwift-Beta */; };
 		B16EC90E2794F80000F35D53 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC90D2794F80000F35D53 /* GoogleSignIn */; };
 		B16EC9172794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
 		B16EC91A2794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
