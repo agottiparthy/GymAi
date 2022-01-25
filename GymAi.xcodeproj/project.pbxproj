@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427AD9F9279FCFDB0052AD3E /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = 427AD9F8279FCFDB0052AD3E /* Roboto */; };
+		427AD9FB279FCFE40052AD3E /* Nunito in Resources */ = {isa = PBXBuildFile; fileRef = 427AD9FA279FCFE40052AD3E /* Nunito */; };
 		427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59CE2794996D00415E07 /* GymAiApp.swift */; };
 		427F59D12794996D00415E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
 		427F59D32794996E00415E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F59D22794996E00415E07 /* Assets.xcassets */; };
@@ -30,6 +32,7 @@
 		427F5A4127949EBC00415E07 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 427F5A4027949EBC00415E07 /* SwiftSpeech */; };
 		427F5A492794C21C00415E07 /* ProcessString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A482794C21C00415E07 /* ProcessString.swift */; };
 		42B90F32279C9DD600DE9D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */; };
+		42B90F34279FA61600DE9D73 /* SwiftSpeech in Resources */ = {isa = PBXBuildFile; fileRef = 42B90F33279FA61600DE9D73 /* SwiftSpeech */; };
 		B16EC90E2794F80000F35D53 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC90D2794F80000F35D53 /* GoogleSignIn */; };
 		B16EC9172794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
 		B16EC91A2794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
@@ -125,6 +128,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		427AD9F8279FCFDB0052AD3E /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Roboto; path = ../../../../../Downloads/Roboto; sourceTree = "<group>"; };
+		427AD9FA279FCFE40052AD3E /* Nunito */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Nunito; path = ../../../../../Downloads/Nunito; sourceTree = "<group>"; };
 		427F59CB2794996D00415E07 /* GymAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427F59CE2794996D00415E07 /* GymAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiApp.swift; sourceTree = "<group>"; };
 		427F59D02794996D00415E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +159,7 @@
 		427F5A242794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		427F5A482794C21C00415E07 /* ProcessString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessString.swift; sourceTree = "<group>"; };
 		42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42B90F33279FA61600DE9D73 /* SwiftSpeech */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftSpeech; path = ../../SwiftSpeech; sourceTree = "<group>"; };
 		B16EC90A2794EA9800F35D53 /* GymAi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymAi.entitlements; sourceTree = "<group>"; };
 		B16EC90B2794EC6900F35D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
@@ -219,6 +225,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		427AD9F7279FCFD10052AD3E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				427AD9FA279FCFE40052AD3E /* Nunito */,
+				427AD9F8279FCFDB0052AD3E /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		427F59C22794996C00415E07 = {
 			isa = PBXGroup;
 			children = (
@@ -250,12 +265,15 @@
 		427F59CD2794996D00415E07 /* GymAi */ = {
 			isa = PBXGroup;
 			children = (
+				427AD9F7279FCFD10052AD3E /* Fonts */,
 				42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */,
 				B16EC9162794FB0B00F35D53 /* Views */,
 				B16EC90B2794EC6900F35D53 /* Info.plist */,
 				B16EC90A2794EA9800F35D53 /* GymAi.entitlements */,
 				427F59CE2794996D00415E07 /* GymAiApp.swift */,
+				427F5A482794C21C00415E07 /* ProcessString.swift */,
 				427F59D22794996E00415E07 /* Assets.xcassets */,
+				42B90F33279FA61600DE9D73 /* SwiftSpeech */,
 				427F59D42794996E00415E07 /* Preview Content */,
 			);
 			path = GymAi;
@@ -338,7 +356,6 @@
 		B16EC9162794FB0B00F35D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				427F5A482794C21C00415E07 /* ProcessString.swift */,
 				427F59D02794996D00415E07 /* ContentView.swift */,
 				B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */,
 				B16EC9232794FBF200F35D53 /* LoginView.swift */,
@@ -560,6 +577,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427AD9F9279FCFDB0052AD3E /* Roboto in Resources */,
+				427AD9FB279FCFE40052AD3E /* Nunito in Resources */,
+				42B90F34279FA61600DE9D73 /* SwiftSpeech in Resources */,
 				427F59D62794996E00415E07 /* Preview Assets.xcassets in Resources */,
 				427F59D32794996E00415E07 /* Assets.xcassets in Resources */,
 				42B90F32279C9DD600DE9D73 /* GoogleService-Info.plist in Resources */,

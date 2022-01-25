@@ -63,25 +63,28 @@ struct LoginView: View {
       
       RadialGradient(gradient: Gradient(colors: [Color("GradientCenter"), Color("GradientEdge")]), center: .center, startRadius: 2, endRadius: 650).ignoresSafeArea()
       VStack(spacing: 20) {
-        Spacer()
-        
-        Text("Welcome to")
-          .fontWeight(.black)
-          .foregroundColor(Color(.white))
-          .font(.largeTitle)
+        Spacer()          
+          
+          Image("Logos").padding(.bottom)
+          
+          Text("GymAI")
+              .font(.custom("Roboto", size: 50, relativeTo: .body))
+              .foregroundColor(Color(red: 0.6196078431372549, green: 0.8156862745098039, blue: 0.9019607843137255))
           .multilineTextAlignment(.center)
-        Text("GymAI")
-          .fontWeight(.black)
-          .foregroundColor(Color(.white))
-          .font(.largeTitle)
-          .multilineTextAlignment(.center)
-        
-        Spacer()
+          .padding(.bottom)
+          
+          Text("AI Powered Workout Journal")
+              .font(.custom("Roboto-Light", size: 30, relativeTo: .body))
+            .foregroundColor(Color(.white))
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(.bottom)
+    
         
         GoogleSignInButton()
-          .padding()
-          .cornerRadius(4.0)
-          .frame(width: 320, height: 60, alignment: .center)
+              .padding([.leading, .bottom])
+              .frame(width: 280, height: 45, alignment: .center)
+          .cornerRadius(8.0)
           .onTapGesture {
             session.signInGoogle()
           }
@@ -135,10 +138,41 @@ struct LoginView: View {
             }
             
           }
-        ).frame(width: 280, height: 45, alignment: .center)
+        )
+              .padding(.bottom)
+              .frame(width: 280, height: 45, alignment: .center)
         .signInWithAppleButtonStyle(.white)
       }
     }
     .preferredColorScheme(.dark)
   }
+}
+
+
+extension UIColor {
+    public convenience init?(hex: String) {
+        let r, g, b, a: CGFloat
+
+        if hex.hasPrefix("#") {
+            let start = hex.index(hex.startIndex, offsetBy: 1)
+            let hexColor = String(hex[start...])
+
+            if hexColor.count == 8 {
+                let scanner = Scanner(string: hexColor)
+                var hexNumber: UInt64 = 0
+
+                if scanner.scanHexInt64(&hexNumber) {
+                    r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
+                    g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
+                    b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
+                    a = CGFloat(hexNumber & 0x000000ff) / 255
+
+                    self.init(red: r, green: g, blue: b, alpha: a)
+                    return
+                }
+            }
+        }
+
+        return nil
+    }
 }
