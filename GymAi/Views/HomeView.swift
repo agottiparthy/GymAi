@@ -20,6 +20,21 @@ struct HomeView: View {
       
             VStack {
                 HStack {
+                    
+                    Spacer()
+                    
+                    Button(action: session.signOut) {
+                      Text("Sign out")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color(.systemIndigo))
+                        .cornerRadius(12)
+                    }
+                    .padding(.trailing, 10.0)
+                    
+                }
+
+                HStack {
                   
                     VStack(alignment: .center) {
 //                      Text("Welcome ")
@@ -35,24 +50,15 @@ struct HomeView: View {
                           .multilineTextAlignment(.center)
                           .fixedSize(horizontal: false, vertical: true)
                           .padding(.horizontal, 10.0)
-                      
+
 
                   }
                   
                 }.padding()
             
                 Basic.init()
-            
-                Button(action: session.signOut) {
-                  Text("Sign out")
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color(.systemIndigo))
-                    .cornerRadius(12)
-                    .padding()
-                }
             }
+            .padding(.top)
         }
         .preferredColorScheme(.dark)
     }
