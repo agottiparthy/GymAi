@@ -20,7 +20,7 @@ struct ContentView: View {
   var body: some View {
     Group{
       if session.session != nil {
-          HomeView()
+        HomeView()
       } else {
         LoginView()
         

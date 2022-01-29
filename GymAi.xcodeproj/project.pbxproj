@@ -984,7 +984,6 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GymAi/Preview Content\"";
 				DEVELOPMENT_TEAM = N9VFVF3XG9;
 				ENABLE_PREVIEWS = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymAi/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
