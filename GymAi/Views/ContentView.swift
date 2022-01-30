@@ -22,7 +22,7 @@ struct ContentView: View {
       if session.session != nil {
         HomeView()
       } else {
-        LoginView()
+          LoginView().preferredColorScheme(.dark)
         
       }
     }.onAppear(perform: getUser)

@@ -47,7 +47,6 @@
 		B16EC92D2794FC8500F35D53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC92A2794FC8500F35D53 /* HomeView.swift */; };
 		B173BA8227950E6700179336 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BA8127950E6700179336 /* SessionStore.swift */; };
 		B173BA842795126000179336 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BA832795126000179336 /* User.swift */; };
-		B173BA8A279A865400179336 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BA89279A865400179336 /* Storage.swift */; };
 		B173BA8D279A880800179336 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B173BA8C279A880800179336 /* FirebaseAnalytics */; };
 		B173BA8F279A880800179336 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B173BA8E279A880800179336 /* FirebaseAnalyticsSwift-Beta */; };
 		B173BA91279A880800179336 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B173BA90279A880800179336 /* FirebaseAuth */; };
@@ -167,7 +166,6 @@
 		B16EC92A2794FC8500F35D53 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B173BA8127950E6700179336 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		B173BA832795126000179336 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B173BA89279A865400179336 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,7 +360,6 @@
 				B16EC92A2794FC8500F35D53 /* HomeView.swift */,
 				B173BA8127950E6700179336 /* SessionStore.swift */,
 				B173BA832795126000179336 /* User.swift */,
-				B173BA89279A865400179336 /* Storage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -643,7 +640,6 @@
 				427F59D12794996D00415E07 /* ContentView.swift in Sources */,
 				B16EC91D2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */,
 				B173BA842795126000179336 /* User.swift in Sources */,
-				B173BA8A279A865400179336 /* Storage.swift in Sources */,
 				427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */,
 				B173BA8227950E6700179336 /* SessionStore.swift in Sources */,
 				427F5A492794C21C00415E07 /* ProcessString.swift in Sources */,

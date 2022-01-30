@@ -35,16 +35,13 @@ class ProcessString : ObservableObject {
         printself()
         
         let uuid = UUID().uuidString
-        let sets = Int(self.parseSets)
-        let reps = Int(self.parseReps)
-        let weight = Double(self.parseWeight)
-        let time = Double(self.parseTime)
+
         self.db.child("exercises").child(uuid).setValue([
           "rawString": self.rawString,
-          "sets": sets ?? 0,
-          "reps": reps ?? 0,
-          "weight": weight ?? 0.0,
-          "time": time ?? 0.0,
+          "sets": self.parseSets,
+          "reps": self.parseReps,
+          "weight": self.parseWeight,
+          "time": self.parseTime,
           "name": self.parseExercise
         ])
     }

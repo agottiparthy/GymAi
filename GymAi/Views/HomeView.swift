@@ -15,54 +15,47 @@ struct HomeView: View {
   @EnvironmentObject private var session: SessionStore
   
   var body: some View {
-      ZStack{
-          RadialGradient(gradient: Gradient(colors: [Color("GradientCenter"), Color("GradientEdge")]), center: .center, startRadius: 2, endRadius: 650).ignoresSafeArea()
-      
-            VStack {
-                HStack {
-                  
-                    VStack(alignment: .center) {
-//                      Text("Welcome ")
-//                          .font(.headline)
-//                          .foregroundColor(Color(.white))
-//                    + Text(session.session?.displayName ?? "")
-//                          .font(.headline)
-//                          .foregroundColor(Color(.white))
-                      
-                      Text("Tap to tell GymAI about your workout. Our AI will understand you!")
-                          .font(.custom("Nunito-Light", size: 15, relativeTo: .body))
-                          .foregroundColor(Color(.white))
-                          .multilineTextAlignment(.center)
-                          .fixedSize(horizontal: false, vertical: true)
-                          .padding(.horizontal, 10.0)
-                      
+      VStack {
+          HStack {
+              Spacer()
+              Button(action: session.signOut) {
+                Text("Sign out")
+                      .padding(.trailing, 10.0)
+                      .foregroundColor(.blue)
+                      .cornerRadius(12)
+              }
+          }
 
-                  }
-                  
-                }.padding()
-            
-                Basic.init()
-            
-                Button(action: session.signOut) {
-                  Text("Sign out")
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color(.systemIndigo))
-                    .cornerRadius(12)
-                    .padding()
-                }
-            }
-        }
-        .preferredColorScheme(.dark)
-    }
+                
+        HStack {
+              Text("Welcome ")
+                  .font(.headline)
+                  .foregroundColor(Color(.white))
+                + Text(session.session?.displayName ?? "")
+                  .font(.headline)
+                  .foregroundColor(Color(.white))
+          }.padding()
+
+        Text("Tap to tell GymAI about your workout. Our AI will understand you!")
+              .font(.custom("Nunito-Light", size: 15, relativeTo: .body))
+              .foregroundColor(Color(.white))
+              .multilineTextAlignment(.center)
+              .fixedSize(horizontal: false, vertical: true)
+              .padding(.all, 10.0)
+
+          Basic.init()
+              .padding(.top, 20.0)
+        
+          Spacer()
+      }.preferredColorScheme(.dark).padding(.top, 10.0)
+  }
 }
 
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-    ContentView()
+        ContentView().preferredColorScheme(.dark)
     }
 }
 
@@ -73,7 +66,7 @@ struct Basic : View {
 
     let s = Storage()
     @State private var text = "Tap to Start"
-    @StateObject var processedString = ProcessString()
+    @ObservedObject var processedString = ProcessString()
 
 
 
@@ -99,20 +92,33 @@ struct Basic : View {
               SwiftSpeech.RecordButton()
                 .swiftSpeechToggleRecordingOnTap(sessionConfiguration: sessionConfiguration, animation: .spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0))
                 .onRecognizeLatest(update: $text)
+            
+            
+            HStack {
+                Spacer()
+                
+                
+                Button(action: {
+                    processedString.inputString(inputString: text)
+                })
+                { Text("+ Add Set")}
+                .padding(.all, 10.0)
+                    .foregroundColor(.white)
+                    .font(.custom("Nunito-Bold", size: 15, relativeTo: .body))
+                    .background(Color("customPink"))
+                    .cornerRadius(10)
+            }
+        
+            TextField("Exercise",text:$processedString.parseExercise).foregroundColor(.white)
+            TextField("Weight", text: $processedString.parseWeight).foregroundColor(.white)
+            TextField("Reptitions", text:$processedString.parseReps).foregroundColor(.white)
+            TextField("Sets", text: $processedString.parseSets).foregroundColor(.white)
+
+
+            
+            
         }.onAppear {
           SwiftSpeech.requestSpeechRecognitionAuthorization()
         }
-    
-   
-        Button(action: {
-            s.upsertData()
-            processedString.inputString(inputString: text)
-        })
-        { Text("+ Add Set")}
-            .padding()
-            .foregroundColor(.white)
-            .font(.custom("Nunito-Bold", size: 15, relativeTo: .body))
-            .background(Color("customPink"))
-            .cornerRadius(10)
     }
 }
