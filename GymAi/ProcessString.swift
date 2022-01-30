@@ -17,6 +17,8 @@ class ProcessString : ObservableObject {
     @Published var parseSets: String
     @Published var parseReps: String
     @Published var parseWeight: String
+    @EnvironmentObject private var session: SessionStore
+    
   
     private let db = Database.database().reference()
   
@@ -29,15 +31,17 @@ class ProcessString : ObservableObject {
         self.parseWeight = ""
     }
     
-    func inputString(inputString: String) {
+    func inputString(inputString: String, session: SessionStore) {
         self.rawString = inputString
         parseString(rawString: rawString)
         printself()
         
         let uuid = UUID().uuidString
-
+        let uid = session.session?.uid
+        
         self.db.child("exercises").child(uuid).setValue([
-          "rawString": self.rawString,
+            "uid": uid,
+            "rawString": self.rawString,
           "sets": self.parseSets,
           "reps": self.parseReps,
           "weight": self.parseWeight,

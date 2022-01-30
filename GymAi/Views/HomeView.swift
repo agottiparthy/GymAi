@@ -61,10 +61,10 @@ struct ContentView_Previews: PreviewProvider {
 
 
 struct Basic : View {
-  
+    @EnvironmentObject private var session: SessionStore
+
     var sessionConfiguration: SwiftSpeech.Session.Configuration
 
-    let s = Storage()
     @State private var text = "Tap to Start"
     @ObservedObject var processedString = ProcessString()
 
@@ -99,7 +99,7 @@ struct Basic : View {
                 
                 
                 Button(action: {
-                    processedString.inputString(inputString: text)
+                    processedString.inputString(inputString: text, session: session)
                 })
                 { Text("+ Add Set")}
                 .padding(.all, 10.0)
