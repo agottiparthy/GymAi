@@ -35,7 +35,9 @@ class ProcessString : ObservableObject {
         self.rawString = inputString
         parseString(rawString: rawString)
         printself()
-        
+    }
+    
+    func uploadString(inputString: String, session: SessionStore) {
         let uuid = UUID().uuidString
         let uid = session.session?.uid
         
@@ -141,7 +143,7 @@ class ProcessString : ObservableObject {
             releventIndices.append(setIndex)
             releventIndices.append(setIndex + 1)
         } else {
-            parseSets = "1 Set"
+            parseSets = "1 set"
         }
 
 

@@ -15,39 +15,61 @@ struct HomeView: View {
   @EnvironmentObject private var session: SessionStore
   
   var body: some View {
-      VStack {
-          HStack {
-              Spacer()
-              Button(action: session.signOut) {
-                Text("Sign out")
-                      .padding(.trailing, 10.0)
-                      .foregroundColor(.blue)
-                      .cornerRadius(12)
+      TabView {
+          VStack {
+              HStack {
+                  Spacer()
+                  Button(action: session.signOut) {
+                    Text("Sign out")
+                          .padding(.trailing, 10.0)
+                          .foregroundColor(.blue)
+                          .cornerRadius(12)
+                  }
               }
-          }
 
-                
-        HStack {
-              Text("Welcome ")
-                  .font(.headline)
+                    
+            HStack {
+                  Text("Welcome ")
+                      .font(.headline)
+                      .foregroundColor(Color(.white))
+                    + Text(session.session?.displayName ?? "")
+                      .font(.headline)
+                      .foregroundColor(Color(.white))
+              }.padding()
+
+            Text("Tap to tell GymAI about your workout. Our AI will understand you!")
+                  .font(.custom("Nunito-Light", size: 15, relativeTo: .body))
                   .foregroundColor(Color(.white))
-                + Text(session.session?.displayName ?? "")
-                  .font(.headline)
-                  .foregroundColor(Color(.white))
-          }.padding()
+                  .multilineTextAlignment(.center)
+                  .fixedSize(horizontal: false, vertical: true)
+                  .padding(.all, 10.0)
 
-        Text("Tap to tell GymAI about your workout. Our AI will understand you!")
-              .font(.custom("Nunito-Light", size: 15, relativeTo: .body))
-              .foregroundColor(Color(.white))
-              .multilineTextAlignment(.center)
-              .fixedSize(horizontal: false, vertical: true)
-              .padding(.all, 10.0)
+              Basic.init()
+                  .padding(.top, 20.0)
+            
+              Spacer()
+              
+              
+          }.preferredColorScheme(.dark).padding(.top, 10.0)
+              .tabItem {
+                  Image(systemName: "house.fill")
+                  Text("Home")
+              }
+          
+          RecordsView()
+              .tabItem{
+                  Image(systemName: "chart.bar.doc.horizontal")
+                  Text("Records")
+              }
+          
+          ProfileView()
+              .tabItem {
+                  Image(systemName: "person.circle.fill")
+                  Text("Profile")
+              }
+      }
+      
 
-          Basic.init()
-              .padding(.top, 20.0)
-        
-          Spacer()
-      }.preferredColorScheme(.dark).padding(.top, 10.0)
   }
 }
 
@@ -55,13 +77,13 @@ struct HomeView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().preferredColorScheme(.dark)
+        ContentView()
     }
 }
 
 
 struct Basic : View {
-    @EnvironmentObject private var session: SessionStore
+    @EnvironmentObject private var UserSession: SessionStore
 
     var sessionConfiguration: SwiftSpeech.Session.Configuration
 
@@ -92,14 +114,16 @@ struct Basic : View {
               SwiftSpeech.RecordButton()
                 .swiftSpeechToggleRecordingOnTap(sessionConfiguration: sessionConfiguration, animation: .spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0))
                 .onRecognizeLatest(update: $text)
+                .onStopRecording { session in
+                    processedString.inputString(inputString: text, session: UserSession)
+                }
             
             
             HStack {
                 Spacer()
                 
-                
                 Button(action: {
-                    processedString.inputString(inputString: text, session: session)
+                    processedString.uploadString(inputString: text, session: UserSession)
                 })
                 { Text("+ Add Set")}
                 .padding(.all, 10.0)

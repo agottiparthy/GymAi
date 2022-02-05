@@ -26,5 +26,6 @@ struct ContentView: View {
         
       }
     }.onAppear(perform: getUser)
+      
   }
 }

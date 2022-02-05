@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		427AD9F9279FCFDB0052AD3E /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = 427AD9F8279FCFDB0052AD3E /* Roboto */; };
 		427AD9FB279FCFE40052AD3E /* Nunito in Resources */ = {isa = PBXBuildFile; fileRef = 427AD9FA279FCFE40052AD3E /* Nunito */; };
+		427ADA0127ACA8680052AD3E /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0027ACA8680052AD3E /* RecordsView.swift */; };
+		427ADA0327ACA9D60052AD3E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0227ACA9D60052AD3E /* ProfileView.swift */; };
+		427ADA0527ADB09E0052AD3E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0427ADB09E0052AD3E /* ImagePicker.swift */; };
 		427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59CE2794996D00415E07 /* GymAiApp.swift */; };
 		427F59D12794996D00415E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
 		427F59D32794996E00415E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F59D22794996E00415E07 /* Assets.xcassets */; };
@@ -129,6 +132,9 @@
 /* Begin PBXFileReference section */
 		427AD9F8279FCFDB0052AD3E /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Roboto; path = ../../../../../Downloads/Roboto; sourceTree = "<group>"; };
 		427AD9FA279FCFE40052AD3E /* Nunito */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Nunito; path = ../../../../../Downloads/Nunito; sourceTree = "<group>"; };
+		427ADA0027ACA8680052AD3E /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
+		427ADA0227ACA9D60052AD3E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		427ADA0427ADB09E0052AD3E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		427F59CB2794996D00415E07 /* GymAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427F59CE2794996D00415E07 /* GymAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiApp.swift; sourceTree = "<group>"; };
 		427F59D02794996D00415E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -360,6 +366,9 @@
 				B16EC92A2794FC8500F35D53 /* HomeView.swift */,
 				B173BA8127950E6700179336 /* SessionStore.swift */,
 				B173BA832795126000179336 /* User.swift */,
+				427ADA0027ACA8680052AD3E /* RecordsView.swift */,
+				427ADA0227ACA9D60052AD3E /* ProfileView.swift */,
+				427ADA0427ADB09E0052AD3E /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -637,9 +646,12 @@
 			files = (
 				B16EC9242794FBF200F35D53 /* LoginView.swift in Sources */,
 				B16EC92B2794FC8500F35D53 /* HomeView.swift in Sources */,
+				427ADA0327ACA9D60052AD3E /* ProfileView.swift in Sources */,
 				427F59D12794996D00415E07 /* ContentView.swift in Sources */,
+				427ADA0127ACA8680052AD3E /* RecordsView.swift in Sources */,
 				B16EC91D2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */,
 				B173BA842795126000179336 /* User.swift in Sources */,
+				427ADA0527ADB09E0052AD3E /* ImagePicker.swift in Sources */,
 				427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */,
 				B173BA8227950E6700179336 /* SessionStore.swift in Sources */,
 				427F5A492794C21C00415E07 /* ProcessString.swift in Sources */,
@@ -982,6 +994,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymAi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Upload Profile Picture";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to turn your speech to text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1017,6 +1030,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymAi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Upload Profile Picture";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to turn your speech to text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
