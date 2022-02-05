@@ -84,13 +84,20 @@ struct ContentView_Previews: PreviewProvider {
 
 struct Basic : View {
     @EnvironmentObject private var UserSession: SessionStore
-
-    var sessionConfiguration: SwiftSpeech.Session.Configuration
-
+    
+    private var sessionConfiguration: SwiftSpeech.Session.Configuration
+    @StateObject private var processedString = ProcessString()
+    
     @State private var text = "Tap to Start"
-    @ObservedObject var processedString = ProcessString()
-
-
+    
+    @State private var inputExercise = ""
+    @State private var inputTime = ""
+    @State private var inputReps = ""
+    @State private var inputSets = ""
+    @State private var inputWeight = ""
+    
+    @State private var uploadSuccess = ""
+    
 
     public init(sessionConfiguration: SwiftSpeech.Session.Configuration) {
         self.sessionConfiguration = sessionConfiguration
@@ -114,16 +121,32 @@ struct Basic : View {
               SwiftSpeech.RecordButton()
                 .swiftSpeechToggleRecordingOnTap(sessionConfiguration: sessionConfiguration, animation: .spring(response: 0.3, dampingFraction: 0.5, blendDuration: 0))
                 .onRecognizeLatest(update: $text)
+                .onStartRecording(appendAction: { session in
+                    uploadSuccess = ""
+                })
                 .onStopRecording { session in
                     processedString.inputString(inputString: text, session: UserSession)
+                    inputExercise = processedString.parseExercise
+                    inputTime = processedString.parseTime
+                    inputReps = processedString.parseReps
+                    inputWeight = processedString.parseWeight
+                    inputSets = processedString.parseSets
                 }
             
             
             HStack {
+                Text(uploadSuccess).foregroundColor(.green)
+                
                 Spacer()
                 
                 Button(action: {
-                    processedString.uploadString(inputString: text, session: UserSession)
+                    processedString.updateInputs(newTime: inputTime, newExercise: inputExercise, newSets: inputSets, newReps: inputReps, newWeight: inputWeight)
+                    if processedString.uploadString(inputString: text, session: UserSession) {
+                        
+                        uploadSuccess = "Upload Succeeded!"
+                        
+                        
+                    }
                 })
                 { Text("+ Add Set")}
                 .padding(.all, 10.0)
@@ -133,10 +156,11 @@ struct Basic : View {
                     .cornerRadius(10)
             }
         
-            TextField("Exercise",text:$processedString.parseExercise).foregroundColor(.white)
-            TextField("Weight", text: $processedString.parseWeight).foregroundColor(.white)
-            TextField("Reptitions", text:$processedString.parseReps).foregroundColor(.white)
-            TextField("Sets", text: $processedString.parseSets).foregroundColor(.white)
+            
+            TextField("Exercise",text:$inputExercise).foregroundColor(.white)
+            TextField("Weight", text: $inputWeight).foregroundColor(.white)
+            TextField("Reptitions", text:$inputReps).foregroundColor(.white)
+            TextField("Sets", text: $inputSets).foregroundColor(.white)
 
 
             

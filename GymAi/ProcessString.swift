@@ -37,7 +37,16 @@ class ProcessString : ObservableObject {
         printself()
     }
     
-    func uploadString(inputString: String, session: SessionStore) {
+    func updateInputs(newTime: String, newExercise: String, newSets: String, newReps: String, newWeight: String) {
+        self.parseTime = newTime
+        self.parseExercise = newExercise
+        self.parseSets = newSets
+        self.parseReps = newReps
+        self.parseWeight = newWeight
+    }
+    
+    
+    func uploadString(inputString: String, session: SessionStore) -> Bool{
         let uuid = UUID().uuidString
         let uid = session.session?.uid
         
@@ -50,6 +59,9 @@ class ProcessString : ObservableObject {
           "time": self.parseTime,
           "name": self.parseExercise
         ])
+        
+        print("uploaded")
+        return true
     }
     
     func printself() {
