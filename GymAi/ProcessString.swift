@@ -17,6 +17,7 @@ class ProcessString : ObservableObject {
     @Published var parseSets: String
     @Published var parseReps: String
     @Published var parseWeight: String
+    @Published var exerciseDate: Date
     @EnvironmentObject private var session: SessionStore
     
   
@@ -29,6 +30,7 @@ class ProcessString : ObservableObject {
         self.parseSets = ""
         self.parseReps = ""
         self.parseWeight = ""
+        self.exerciseDate = Date()
     }
     
     func inputString(inputString: String, session: SessionStore) {
@@ -57,7 +59,8 @@ class ProcessString : ObservableObject {
           "reps": self.parseReps,
           "weight": self.parseWeight,
           "time": self.parseTime,
-          "name": self.parseExercise
+          "name": self.parseExercise,
+            "timestamp": self.exerciseDate
         ])
         
         print("uploaded")
@@ -71,6 +74,7 @@ class ProcessString : ObservableObject {
         print("Weight: \(parseWeight)")
         print("Reps: \(parseReps)")
         print("Time: \(parseTime)")
+        print("Date: \(exerciseDate)")
     }
     
     

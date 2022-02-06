@@ -26,7 +26,6 @@ struct HomeView: View {
                           .cornerRadius(12)
                   }
               }
-
                     
             HStack {
                   Text("Welcome ")

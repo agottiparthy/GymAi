@@ -12,6 +12,8 @@
 		427ADA0127ACA8680052AD3E /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0027ACA8680052AD3E /* RecordsView.swift */; };
 		427ADA0327ACA9D60052AD3E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0227ACA9D60052AD3E /* ProfileView.swift */; };
 		427ADA0527ADB09E0052AD3E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0427ADB09E0052AD3E /* ImagePicker.swift */; };
+		427ADA0727B056050052AD3E /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0627B056040052AD3E /* Record.swift */; };
+		427ADA0927B0565C0052AD3E /* CardioRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0827B0565C0052AD3E /* CardioRecord.swift */; };
 		427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59CE2794996D00415E07 /* GymAiApp.swift */; };
 		427F59D12794996D00415E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
 		427F59D32794996E00415E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F59D22794996E00415E07 /* Assets.xcassets */; };
@@ -135,6 +137,8 @@
 		427ADA0027ACA8680052AD3E /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
 		427ADA0227ACA9D60052AD3E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		427ADA0427ADB09E0052AD3E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		427ADA0627B056040052AD3E /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		427ADA0827B0565C0052AD3E /* CardioRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardioRecord.swift; sourceTree = "<group>"; };
 		427F59CB2794996D00415E07 /* GymAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427F59CE2794996D00415E07 /* GymAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiApp.swift; sourceTree = "<group>"; };
 		427F59D02794996D00415E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 				B16EC90A2794EA9800F35D53 /* GymAi.entitlements */,
 				427F59CE2794996D00415E07 /* GymAiApp.swift */,
 				427F5A482794C21C00415E07 /* ProcessString.swift */,
+				427ADA0627B056040052AD3E /* Record.swift */,
+				427ADA0827B0565C0052AD3E /* CardioRecord.swift */,
 				427F59D22794996E00415E07 /* Assets.xcassets */,
 				42B90F33279FA61600DE9D73 /* SwiftSpeech */,
 				427F59D42794996E00415E07 /* Preview Content */,
@@ -644,8 +650,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427ADA0927B0565C0052AD3E /* CardioRecord.swift in Sources */,
 				B16EC9242794FBF200F35D53 /* LoginView.swift in Sources */,
 				B16EC92B2794FC8500F35D53 /* HomeView.swift in Sources */,
+				427ADA0727B056050052AD3E /* Record.swift in Sources */,
 				427ADA0327ACA9D60052AD3E /* ProfileView.swift in Sources */,
 				427F59D12794996D00415E07 /* ContentView.swift in Sources */,
 				427ADA0127ACA8680052AD3E /* RecordsView.swift in Sources */,
