@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427AD9F9279FCFDB0052AD3E /* Roboto in Resources */ = {isa = PBXBuildFile; fileRef = 427AD9F8279FCFDB0052AD3E /* Roboto */; };
+		427AD9FB279FCFE40052AD3E /* Nunito in Resources */ = {isa = PBXBuildFile; fileRef = 427AD9FA279FCFE40052AD3E /* Nunito */; };
+		427ADA0127ACA8680052AD3E /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0027ACA8680052AD3E /* RecordsView.swift */; };
+		427ADA0327ACA9D60052AD3E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0227ACA9D60052AD3E /* ProfileView.swift */; };
+		427ADA0527ADB09E0052AD3E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427ADA0427ADB09E0052AD3E /* ImagePicker.swift */; };
 		427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59CE2794996D00415E07 /* GymAiApp.swift */; };
 		427F59D12794996D00415E07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
 		427F59D32794996E00415E07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427F59D22794996E00415E07 /* Assets.xcassets */; };
@@ -30,19 +35,7 @@
 		427F5A4127949EBC00415E07 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 427F5A4027949EBC00415E07 /* SwiftSpeech */; };
 		427F5A492794C21C00415E07 /* ProcessString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A482794C21C00415E07 /* ProcessString.swift */; };
 		42B90F32279C9DD600DE9D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */; };
-		427F5A4A2794C21C00415E07 /* ProcessString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F5A482794C21C00415E07 /* ProcessString.swift */; };
-		42C23295279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C23294279C9B1800CAFFBA /* GoogleService-Info.plist */; };
-		42C23296279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C23294279C9B1800CAFFBA /* GoogleService-Info.plist */; };
-		42C23297279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C23294279C9B1800CAFFBA /* GoogleService-Info.plist */; };
-		42C23298279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C23294279C9B1800CAFFBA /* GoogleService-Info.plist */; };
-		42C23299279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C23294279C9B1800CAFFBA /* GoogleService-Info.plist */; };
-		42C2329A279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C23294279C9B1800CAFFBA /* GoogleService-Info.plist */; };
-		42C2329B279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C23294279C9B1800CAFFBA /* GoogleService-Info.plist */; };
-		B16EC9012794E18800F35D53 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9002794E18800F35D53 /* FirebaseAnalytics */; };
-		B16EC9032794E18800F35D53 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9022794E18800F35D53 /* FirebaseAuth */; };
-		B16EC9052794E18800F35D53 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9042794E18800F35D53 /* FirebaseFirestore */; };
-		B16EC9072794E18800F35D53 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9062794E18800F35D53 /* FirebaseFirestoreCombine-Community */; };
-		B16EC9092794E18800F35D53 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC9082794E18800F35D53 /* FirebaseFirestoreSwift-Beta */; };
+		42B90F34279FA61600DE9D73 /* SwiftSpeech in Resources */ = {isa = PBXBuildFile; fileRef = 42B90F33279FA61600DE9D73 /* SwiftSpeech */; };
 		B16EC90E2794F80000F35D53 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B16EC90D2794F80000F35D53 /* GoogleSignIn */; };
 		B16EC9172794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
 		B16EC91A2794FB2900F35D53 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F59D02794996D00415E07 /* ContentView.swift */; };
@@ -57,7 +50,6 @@
 		B16EC92D2794FC8500F35D53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EC92A2794FC8500F35D53 /* HomeView.swift */; };
 		B173BA8227950E6700179336 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BA8127950E6700179336 /* SessionStore.swift */; };
 		B173BA842795126000179336 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BA832795126000179336 /* User.swift */; };
-		B173BA8A279A865400179336 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B173BA89279A865400179336 /* Storage.swift */; };
 		B173BA8D279A880800179336 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B173BA8C279A880800179336 /* FirebaseAnalytics */; };
 		B173BA8F279A880800179336 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B173BA8E279A880800179336 /* FirebaseAnalyticsSwift-Beta */; };
 		B173BA91279A880800179336 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B173BA90279A880800179336 /* FirebaseAuth */; };
@@ -138,6 +130,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		427AD9F8279FCFDB0052AD3E /* Roboto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Roboto; path = ../../../../../Downloads/Roboto; sourceTree = "<group>"; };
+		427AD9FA279FCFE40052AD3E /* Nunito */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Nunito; path = ../../../../../Downloads/Nunito; sourceTree = "<group>"; };
+		427ADA0027ACA8680052AD3E /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
+		427ADA0227ACA9D60052AD3E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		427ADA0427ADB09E0052AD3E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		427F59CB2794996D00415E07 /* GymAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		427F59CE2794996D00415E07 /* GymAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAiApp.swift; sourceTree = "<group>"; };
 		427F59D02794996D00415E07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,6 +165,7 @@
 		427F5A482794C21C00415E07 /* ProcessString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessString.swift; sourceTree = "<group>"; };
 
 		42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		42B90F33279FA61600DE9D73 /* SwiftSpeech */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftSpeech; path = ../../SwiftSpeech; sourceTree = "<group>"; };
 		B16EC90A2794EA9800F35D53 /* GymAi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymAi.entitlements; sourceTree = "<group>"; };
 		B16EC90B2794EC6900F35D53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 		B16EC92A2794FC8500F35D53 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B173BA8127950E6700179336 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		B173BA832795126000179336 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B173BA89279A865400179336 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +230,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		427AD9F7279FCFD10052AD3E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				427AD9FA279FCFE40052AD3E /* Nunito */,
+				427AD9F8279FCFDB0052AD3E /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		427F59C22794996C00415E07 = {
 			isa = PBXGroup;
 			children = (
@@ -264,12 +270,15 @@
 		427F59CD2794996D00415E07 /* GymAi */ = {
 			isa = PBXGroup;
 			children = (
+				427AD9F7279FCFD10052AD3E /* Fonts */,
 				42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */,
 				B16EC9162794FB0B00F35D53 /* Views */,
 				B16EC90B2794EC6900F35D53 /* Info.plist */,
 				B16EC90A2794EA9800F35D53 /* GymAi.entitlements */,
 				427F59CE2794996D00415E07 /* GymAiApp.swift */,
+				427F5A482794C21C00415E07 /* ProcessString.swift */,
 				427F59D22794996E00415E07 /* Assets.xcassets */,
+				42B90F33279FA61600DE9D73 /* SwiftSpeech */,
 				427F59D42794996E00415E07 /* Preview Content */,
 			);
 			path = GymAi;
@@ -352,14 +361,15 @@
 		B16EC9162794FB0B00F35D53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				427F5A482794C21C00415E07 /* ProcessString.swift */,
 				427F59D02794996D00415E07 /* ContentView.swift */,
 				B16EC91C2794FBBD00F35D53 /* GoogleSignInButton.swift */,
 				B16EC9232794FBF200F35D53 /* LoginView.swift */,
 				B16EC92A2794FC8500F35D53 /* HomeView.swift */,
 				B173BA8127950E6700179336 /* SessionStore.swift */,
 				B173BA832795126000179336 /* User.swift */,
-				B173BA89279A865400179336 /* Storage.swift */,
+				427ADA0027ACA8680052AD3E /* RecordsView.swift */,
+				427ADA0227ACA9D60052AD3E /* ProfileView.swift */,
+				427ADA0427ADB09E0052AD3E /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -574,6 +584,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427AD9F9279FCFDB0052AD3E /* Roboto in Resources */,
+				427AD9FB279FCFE40052AD3E /* Nunito in Resources */,
+				42B90F34279FA61600DE9D73 /* SwiftSpeech in Resources */,
 				427F59D62794996E00415E07 /* Preview Assets.xcassets in Resources */,
 				427F59D32794996E00415E07 /* Assets.xcassets in Resources */,
 
@@ -637,10 +650,12 @@
 			files = (
 				B16EC9242794FBF200F35D53 /* LoginView.swift in Sources */,
 				B16EC92B2794FC8500F35D53 /* HomeView.swift in Sources */,
+				427ADA0327ACA9D60052AD3E /* ProfileView.swift in Sources */,
 				427F59D12794996D00415E07 /* ContentView.swift in Sources */,
+				427ADA0127ACA8680052AD3E /* RecordsView.swift in Sources */,
 				B16EC91D2794FBBD00F35D53 /* GoogleSignInButton.swift in Sources */,
 				B173BA842795126000179336 /* User.swift in Sources */,
-				B173BA8A279A865400179336 /* Storage.swift in Sources */,
+				427ADA0527ADB09E0052AD3E /* ImagePicker.swift in Sources */,
 				427F59CF2794996D00415E07 /* GymAiApp.swift in Sources */,
 				B173BA8227950E6700179336 /* SessionStore.swift in Sources */,
 				427F5A492794C21C00415E07 /* ProcessString.swift in Sources */,
@@ -983,6 +998,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymAi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Upload Profile Picture";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to turn your speech to text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1018,6 +1034,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GymAi/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Upload Profile Picture";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app uses the micrpohone for speech recognition";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "This app uses speech recognition to turn your speech to text";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
