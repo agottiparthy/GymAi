@@ -167,6 +167,7 @@
 		427F5A222794997200415E07 /* GymAi_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		427F5A242794997200415E07 /* GymAi_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAi_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		427F5A482794C21C00415E07 /* ProcessString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessString.swift; sourceTree = "<group>"; };
+
 		42B90F31279C9DD600DE9D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42B90F33279FA61600DE9D73 /* SwiftSpeech */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftSpeech; path = ../../SwiftSpeech; sourceTree = "<group>"; };
 		B16EC90A2794EA9800F35D53 /* GymAi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymAi.entitlements; sourceTree = "<group>"; };
@@ -594,6 +595,7 @@
 				42B90F34279FA61600DE9D73 /* SwiftSpeech in Resources */,
 				427F59D62794996E00415E07 /* Preview Assets.xcassets in Resources */,
 				427F59D32794996E00415E07 /* Assets.xcassets in Resources */,
+
 				42B90F32279C9DD600DE9D73 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +618,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C23298279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */,
 				427F59F52794997000415E07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +629,7 @@
 			files = (
 				427F5A0D2794997200415E07 /* Preview Assets.xcassets in Resources */,
 				427F5A0A2794997200415E07 /* Assets.xcassets in Resources */,
+				42C23299279C9B1800CAFFBA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
