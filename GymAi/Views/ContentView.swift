@@ -20,9 +20,10 @@ struct ContentView: View {
   var body: some View {
     Group{
       if session.session != nil {
-        HomeView()
+        HomeView().environmentObject(session)
       } else {
           LoginView().preferredColorScheme(.dark)
+          .environmentObject(session)
         
       }
     }.onAppear(perform: getUser)

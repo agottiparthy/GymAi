@@ -60,7 +60,7 @@ class ProcessString : ObservableObject {
           "weight": self.parseWeight,
           "time": self.parseTime,
           "name": self.parseExercise,
-            "timestamp": self.exerciseDate
+            "timestamp": self.exerciseDate.timeIntervalSince1970
         ])
         
         print("uploaded")

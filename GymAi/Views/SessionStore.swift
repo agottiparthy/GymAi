@@ -53,7 +53,8 @@ final class SessionStore: ObservableObject {
       } else {
         let givenName = user?.profile?.givenName ?? ""
         let familyName = user?.profile?.familyName ?? ""
-        self.session = User(uid: (user?.userID)!, displayName: String(format: "%@ %@", givenName, familyName))
+        let profileURL = user?.profile?.imageURL(withDimension: 100)
+        self.session = User(uid: (user?.userID)!, displayName: String(format: "%@ %@", givenName, familyName), profileURL: profileURL)
       }
     }
   }
@@ -73,7 +74,7 @@ final class SessionStore: ObservableObject {
   func listen() {
     handle =  Auth.auth().addStateDidChangeListener { (auth, user) in
       if let user = user {
-        self.session = User(uid: user.uid, displayName: user.displayName)
+        self.session = User(uid: user.uid, displayName: user.displayName, profileURL: user.photoURL)
       } else {
         self.session = nil
       }
